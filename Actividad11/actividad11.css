@@ -3,20 +3,30 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     text-align: center;
+    padding: 10px;
+
 }
 .noticia {
     margin: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    bor
+    border-bottom:solid grey 1px;
 }
+
+
 .Titulo {
     color: darkblue;
+    font-weight:bold ;
 }
 .link {
     color: green;
     
-
 }
 .link:hover{
     color: blueviolet;
+}
+
+.imagenes {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
 }
