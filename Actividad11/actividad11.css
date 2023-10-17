@@ -1,0 +1,22 @@
+.seccio-noticies{
+    background-color: #444;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+}
+.noticia {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bor
+}
+.Titulo {
+    color: darkblue;
+}
+.link {
+    color: green;
+    
+
+}
+.link:hover{
+    color: blueviolet;
+}
