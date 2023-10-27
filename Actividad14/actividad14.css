@@ -1,0 +1,36 @@
+.navegacion{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:red;
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between; 
+}
+.navegacion h3{
+    color: beige;
+    order: 1;
+}
+.navegacion ul{
+    order: 2;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.navegacion li{
+    list-style: none;
+    align-self: center;
+
+}
+.navegacion a{
+    color: beige;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+}
+.navegacion a:hover{
+    background: black;
+}
+
+.navegacion input{
+    margin: 20px;
+    order: 3;
+}
