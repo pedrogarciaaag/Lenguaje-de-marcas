@@ -24,10 +24,11 @@
     color: beige;
     text-decoration: none;
     transition-duration: 0.5s;
-    
+    margin: 10px;
 }
 .navegacion a:hover{
-    background: black;
+    background: beige;
+    color: black;
 }
 
 .navegacion input{
