@@ -4,9 +4,11 @@
     padding: 10px;  
     display: flex;
     justify-content: space-between; 
+    border-radius:10px
 }
 .navegacion h3{
     color: beige;
+    font-family: 'Courier New', Courier, monospace;
     order: 1;
 }
 .navegacion ul{
