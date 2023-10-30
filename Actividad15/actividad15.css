@@ -1,0 +1,28 @@
+.cabecera{
+    text-align: center;
+    color: beige;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+.equipo{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.personas img{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+.personas h4{
+    color: green;
+}
+.personas{
+    flex: 1 0 20%;
+    margin: 10px;
+    border: 2px, solid, black;
+}
