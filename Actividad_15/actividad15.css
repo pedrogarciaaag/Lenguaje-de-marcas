@@ -8,7 +8,7 @@
 }
 .equipo{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap; 
     flex-direction: row;
     justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +24,7 @@
 .personas:hover {
     transform: scale(1.05);
     transition-duration: 500ms;
-  }
+}
 .personas img{
     height: 200px;
     width: 200px;
