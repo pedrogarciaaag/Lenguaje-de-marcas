@@ -2,16 +2,29 @@
     text-align: center;
     color: beige;
     background-color: red;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
     padding: 10px;
 }
 .equipo{
     display: flex;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-around;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    
+    background: linear-gradient(0deg, black, red    );
 }
+.personas{
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    width: 350px;
+}
+.personas:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+  }
 .personas img{
     height: 200px;
     width: 200px;
@@ -21,8 +34,4 @@
 .personas h4{
     color: green;
 }
-.personas{
-    flex: 1 0 20%;
-    margin: 10px;
-    border: 2px, solid, black;
-}
+
