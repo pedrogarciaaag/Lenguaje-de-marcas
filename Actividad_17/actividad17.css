@@ -2,18 +2,17 @@ body{
     display: grid;
     grid-template-rows: 10% auto 10%;
     grid-template-columns: 15% auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .navegacion{
     background-color: #009976;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 15px;
     grid-column-start: 1;
-    grid-column-end:end;
+    grid-column-end:3;
 }
 .lado{
     background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
     grid-row: 2;
 }
@@ -22,16 +21,14 @@ body{
 }
 .principal{
     background-color: palevioletred;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 15px;
     grid-column: 2;
     grid-row:2 ;
 }
 .pie{
     background-color: blue;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 15px;
     grid-column-start: 1;
-    grid-column-end:end;
+    grid-column-end:3;
 }
