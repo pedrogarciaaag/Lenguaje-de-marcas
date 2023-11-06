@@ -7,7 +7,7 @@ body{
 .navegacion{
     background-color: #009976;
     color: white;
-    padding: 15px;
+    padding: 10px;
     grid-column-start: 1;
     grid-column-end:3;
 }
@@ -28,7 +28,7 @@ body{
 .pie{
     background-color: blue;
     color: white;
-    padding: 15px;
+    padding: 5px;
     grid-column-start: 1;
     grid-column-end:3;
 }
