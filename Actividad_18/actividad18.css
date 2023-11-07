@@ -1,0 +1,42 @@
+body{
+    background-color: blanchedalmond;
+}
+.tamaño::after{
+    content:"El tamaño de la pantalla es menor que: ∞" ;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+    background-color: lightblue; 
+    }
+    .tamaño::after{
+        content:"El tamaño de la pantalla es menor que: 1200px" ;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    body {
+    background-color: red; 
+    }
+    .tamaño::after{
+        content:"El tamaño de la pantalla es menor que: 900px" ;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+    background-color: green; 
+    }
+    .tamaño::after{
+        content:"El tamaño de la pantalla es menor que: 700px" ;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+    background-color: yellow; 
+    }
+    .tamaño::after{
+        content:"El tamaño de la pantalla es menor que: 500px" ;
+    }
+}
