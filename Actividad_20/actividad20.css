@@ -1,0 +1,143 @@
+.navegacion{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:green;
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between; 
+    border-radius:10px
+}
+.navegacion h3{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    order: 1;
+}
+.navegacion ul{
+    order: 2;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.navegacion li{
+    list-style: none;
+    align-self: center;
+
+}
+.navegacion a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    margin: 10px;
+}
+.navegacion a:hover{
+    background: white;
+    color: black;
+}
+.navegacion input{
+    margin: 20px;
+    order: 3;
+}
+
+main{
+    display: grid;
+    grid-template-rows: [uno] 1fr [dos] 1fr [tres] 1fr [cuatro] 1fr [cinco] 1fr;
+    grid-template-columns: [uno]10% [dos]80% [tres]10%;
+}
+.nosotros{
+    grid-row: uno / dos;
+    grid-column: dos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+.nosotroscont{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.nosotroscont h3{
+    font-size: 30px;
+}
+.nosotrosimg{
+    align-items: center;
+}
+.nosotrosimg img{
+    width: 600px;
+    height: 350px;
+    box-shadow: 10px 10px 10px gray;
+    border-radius: 10px;
+}
+
+.servicio{
+    grid-row: dos / tres;
+    grid-column: dos;
+}
+.servicio h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tipos{
+    border-radius: 10px;
+    background-color: green;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 30px gray;
+}
+.tipos:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+.tipos img{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    align-items: center;
+}
+.tipos h4{
+    font-size: 25px;
+    color: white;
+}
+
+.portfolio{
+    grid-row: tres / cuatro;
+    grid-column: dos;
+    margin: 20px;
+}
+.portfolio h3{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.portfolios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.proyectos{
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray; 
+    margin: 20px;
+}
+.proyectos:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+.proyectos img{
+    width: 400px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.proyectos h4{
+    font-size: 25px;
+}
