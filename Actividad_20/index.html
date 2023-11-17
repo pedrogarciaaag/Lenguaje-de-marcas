@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad 20</title>
-    <link rel="stylesheet" href="actividad20.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -12,100 +12,134 @@
             <h3>VirtuTech</h3>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#SobreNosotros">Sobre nosotros</a></li>
+                <li><a href="#SobreNosotros">Nosotros</a></li>
                 <li><a href="#NuestrosServicios">Servicios</a></li>
                 <li><a href="#NuestroPortfolio">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
             </ul>
-            <input type="search" name="buscador" id="buscador" placeholder="Buscar">
+            <input type="search" name="buscador" id="buscador" placeholder="Buscar" class="buscador">
         </nav>
     </header>
-    <main>
-        <section id="SobreNosotros" class="nosotros">
-            <div class="nosotroscont">
-                <h3>Sobre nosotros</h3>
-                <p>VirtuTech es una empresa líder en el campo de la tecnología, dedicada a proporcionar experiencias únicas a nuestros clientes. Nuestro objetivo principal es satisfacer las necesidades y deseos de nuestros clientes, y nos esforzamos por superar sus expectativas en cada interacción.</p>
-                <p>Nuestro equipo de expertos en tecnología trabaja incansablemente para desarrollar productos y servicios que no solo satisfacen las necesidades actuales de nuestros clientes, sino que también anticipan sus necesidades futuras. Estamos constantemente buscando formas de innovar y mejorar, y estamos emocionados por lo que el futuro nos depara. </p>
+    <section id="SobreNosotros" class="nosotros">
+        <div class="nosotroscont">
+            <h3>Sobre nosotros</h3>
+            <p><b>VirtuTech</b> es una empresa líder en el campo de la tecnología, dedicada a proporcionar experiencias únicas a nuestros clientes. Nuestro objetivo principal es <b>satisfacer las necesidades y deseos de nuestros clientes</b>, y nos esforzamos por superar sus expectativas en cada interacción.</p>
+            <p>Nuestro equipo de expertos en tecnología trabaja incansablemente para desarrollar productos y servicios que no solo satisfacen las necesidades actuales de nuestros clientes, sino que también anticipan sus necesidades futuras. Estamos constantemente buscando <b>formas de innovar y mejorar</b>, y estamos emocionados por lo que el futuro nos depara. </p>
+        </div>
+        <div class="nosotrosimg">
+            <img src="virtutech.png" alt="">
+        </div>
+    </section>
+    <main class="colorfondo">
+    <section id="NuestrosServicios" class="servicio">
+        <h3>Nuestros Servicios</h3>
+        <div class="servicios">
+            <div class="tipos">
+                <img src="https://cdn-icons-png.flaticon.com/512/5741/5741483.png" alt="">
+                <h4>Desarrollador de software</h4>
+                <p>Te ofrecemos soluciones de software a medida, adaptadas a tus necesidades y objetivos. Desarrollamos aplicaciones web, móviles y de escritorio, usando las mejores tecnologías y metodologías</p>
             </div>
-            <div class="nosotrosimg">
-                <img src="virtutech.png" alt="">
+            <div class="tipos">
+                <img src="https://images.vexels.com/media/users/3/129850/isolated/preview/ec8c06f8dd5f1c3dfd154bbb2a6fab34-pincel-y-paleta-de-colores.png" alt="">
+                <h4>Diseño grafico</h4>
+                <p>Creamos diseños gráficos originales y profesionales, que transmiten el mensaje y la identidad de tu marca. Diseñamos logotipos, folletos, carteles, banners, infografías y más.</p>
             </div>
-        </section>
-        <section id="NuestrosServicios" class="servicio">
-            <h3>Nuestros Servicios</h3>
-            <div class="servicios">
-                <div class="tipos">
-                    <img src="https://cdn-icons-png.flaticon.com/512/5741/5741483.png" alt="">
-                    <h4>Desarrollador de software</h4>
-                    <p>Te ofrecemos soluciones de software a medida, adaptadas a tus necesidades y objetivos. Desarrollamos aplicaciones web, móviles y de escritorio, usando las mejores tecnologías y metodologías</p>
-                </div>
-                <div class="tipos">
-                    <img src="https://images.vexels.com/media/users/3/129850/isolated/preview/ec8c06f8dd5f1c3dfd154bbb2a6fab34-pincel-y-paleta-de-colores.png" alt="">
-                    <h4>Diseño grafico</h4>
-                    <p>Creamos diseños gráficos originales y profesionales, que transmiten el mensaje y la identidad de tu marca. Diseñamos logotipos, folletos, carteles, banners, infografías y más.</p>
-                </div>
-                <div class="tipos">
-                    <img src="https://www.asociacioncm.es/wp-content/uploads/2017/10/REDES-SOCIALES.png" alt="">
-                    <h4>Marqueting digital</h4>
-                    <p>Te ayudamos a aumentar la visibilidad y el tráfico de tu sitio web, mediante estrategias de marketing digital efectivas y personalizadas. Gestionamos tus redes sociales, campañas de publicidad online, posicionamiento SEO y SEM, email marketing ...</p>
-                </div>
-                <div class="tipos">
-                    <img src="https://cdn-icons-png.flaticon.com/512/777/777227.png" alt="">
-                    <h4>Soporte tecnico</h4>
-                    <p>Te brindamos soporte técnico de calidad, para resolver cualquier problema o duda que tengas con tu equipo informático o tu software. Te atendemos de forma rápida, eficiente y amable, por teléfono, chat o correo electrónico.</p>
-                </div>
+            <div class="tipos">
+                <img src="https://www.asociacioncm.es/wp-content/uploads/2017/10/REDES-SOCIALES.png" alt="">
+                <h4>Marqueting digital</h4>
+                <p>Te ayudamos a aumentar la visibilidad y el tráfico de tu sitio web, mediante estrategias de marketing digital efectivas y personalizadas. Gestionamos tus redes sociales, campañas de publicidad online, posicionamiento SEO y SEM, email marketing ...</p>
             </div>
-        </section>
-        <section id="NuestroPortfolio" class="portfolio">
-            <h3>Nuestro Portfolio</h3>
-            <div class="portfolios">
-                <div class="proyectos">
-                    <img src="https://cdn-3.expansion.mx/dims4/default/4307f60/2147483647/strip/true/crop/6950x4633+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fbb%2F1d%2F9fc472dc46afbf9a73af9d0d8d4f%2Fshutterstock-543482497.jpg" alt="">
-                    <h4>VirtuReality</h4>
-                    <p>El objetivo de este proyecto es ofrecer una experiencia única e inmersiva que supere las expectativas de los clientes y les haga sentir como si estuvieran en otro mundo.</p>
-                    <p><b>Ver detalles</b></p>
-                </div>
-                <div class="proyectos">
-                    <img src="watchtogheter.png" alt="">
-                    <h4>WatchTogheter</h4>
-                    <p>Watchtogether es una plataforma que brinda una experiencia de entretenimiento social y conectada, gratuita y segura, que permita a las personas disfrutar del contenido en línea con amigos y familiares de manera personalizada y sincronizada, mientras se divierten y se conectan en línea</p>
-                    <p><b>Ver detalles</b></p>
-                </div>
-                <div class="proyectos">
-                    <img src="https://consultoria-consultores.es/files/media/image/articles/2021/02/original/5782seidor.png" alt="">
-                    <h4>VirtuReality</h4>
-                    <p>Un asistente virtual inteligente que pueda ayudar a los clientes de VirtuTech con diversas tareas y consultas. El asistente utiliza inteligencia artificial para aprender de los hábitos y necesidades de cada usuario, y se comunicaría con ellos de forma natural y amigable. </p>
-                    <p><b>Ver detalles</b></p>
-                </div>
+            <div class="tipos">
+                <img src="https://cdn-icons-png.flaticon.com/512/777/777227.png" alt="">
+                <h4>Soporte tecnico</h4>
+                <p>Te brindamos soporte técnico de calidad, para resolver cualquier problema o duda que tengas con tu equipo informático o tu software. Te atendemos de forma rápida, eficiente y amable, por teléfono, chat o correo electrónico.</p>
             </div>
-        </section>
-        <section id="Contacto" class="contacto">
-            <div class="contactos">
-                <h3>Contáctanos</h3>
-                <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</p>
-                <div class="nombre">
-                    <h4>Nombre:</h4>
-                    <input type="text">
-                </div>  
-                <div class="correo">
-                    <h4>Correo electrónico:</h4>
-                    <input type="text">
-                </div>
-                <div class="mensaje">
-                    <h4>Mensaje:</h4>
-                    <input type="text">
-                </div>
-                <div class="boton">
-                    <input type="button" name="" id="" value="Enviar mensaje">
-                </div>
-            </div>                
-        </section>
+        </div>
+    </section>
     </main>
-
+    <section id="NuestroPortfolio" class="portfolio">
+        <h3>Nuestro Portfolio</h3>
+        <div class="portfolios">
+            <div class="proyectos">
+                <img src="https://cdn-3.expansion.mx/dims4/default/4307f60/2147483647/strip/true/crop/6950x4633+0+0/resize/1200x800!/format/webp/quality/60/?url=https%3A%2F%2Fcherry-brightspot.s3.amazonaws.com%2Fbb%2F1d%2F9fc472dc46afbf9a73af9d0d8d4f%2Fshutterstock-543482497.jpg" alt="">
+                <div class="separacion">
+                <h4>VirtuReality</h4>
+                <p>El objetivo de este proyecto es ofrecer una experiencia única e inmersiva que supere las expectativas de los clientes y les haga sentir como si estuvieran en otro mundo.</p>
+                <a href="#"><b>Ver detalles</b></a>
+                </div>
+            </div>
+            <div class="proyectos">
+                <img src="watchtogheter.png" alt="">
+                <div class="separacion">
+                <h4>WatchTogheter</h4>
+                <p>Watchtogether es una plataforma que brinda una experiencia de entretenimiento social y conectada, gratuita y segura, que permita a las personas disfrutar del contenido en línea con amigos y familiares de manera personalizada y sincronizada, mientras se divierten y se conectan en línea</p>
+                <a href="#"><b>Ver detalles</b></a>
+                </div>
+            </div>
+            <div class="proyectos">
+                <img src="https://consultoria-consultores.es/files/media/image/articles/2021/02/original/5782seidor.png" alt="">
+                <div class="separacion">
+                <h4>VirtuReality</h4>
+                <p>Un asistente virtual inteligente que pueda ayudar a los clientes de VirtuTech con diversas tareas y consultas. El asistente utiliza inteligencia artificial para aprender de los hábitos y necesidades de cada usuario, y se comunicaría con ellos de forma natural y amigable. </p>
+                <a href="#"><b>Ver detalles</b></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="colorfondo">
+    <section id="Contacto" class="contacto">
+        <div class="contactos">
+            <h3>Contáctanos</h3>
+            <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</p>
+            <div class="nombre">
+                <h4>Nombre:</h4>
+                <input type="text">
+            </div>  
+            <div class="correo">
+                <h4>Correo electrónico:</h4>
+                <input type="text">
+            </div>
+            <div class="mensaje">
+                <h4>Mensaje:</h4>
+                <input type="text">
+            </div>
+            <div class="boton">
+                <input type="button" name="" id="" value="Enviar mensaje">
+            </div>
+        </div>
+    </section>
+    </main>
     <footer>
-
-
+        <div class="pie width">
+            <div class="virtu diferentes " >
+                <h4>VirtuTech</h4>
+                <p><b>VirtuTech</b> es una empresa líder en el campo de la tecnología, dedicada a proporcionar experiencias únicas a nuestros clientes.</p>
+            </div>
+            <div class="nave diferentes">
+                <h4>Navegacion</h4>
+                <li><a href="#SobreNosotros">Nosotros</a></li>
+                <li><a href="#NuestrosServicios">Servicios</a></li>
+                <li><a href="#NuestroPortfolio">Portfolio</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </div>
+            <div class="contact diferentes">
+                <h4>Contáctanos</h4>
+                <li><p>971 60 64 99</p></li>
+                <li><p>info@virtutech.com</p></li>
+                <li><p>Carrer de l'Arner, 3, 07013</p></li>
+            </div>
+            <div class="diferentes">
+                <h4>Redes sociales</h4>
+                <div class="sociales">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png" alt="">
+                <img src="https://www.adverthia.com/wp-content/uploads/2020/02/instagram-logo-png-transparent-background-1024x1024-1.png" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Twitter_bird_logo_black.svg/2048px-Twitter_bird_logo_black.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <p>2023 ©VirtuTech Company</p>
+        </div>
     </footer>
-
 </body>
 </html>
