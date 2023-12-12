@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 22</title>
+</head>
+<body>
+    <header><h1>Los mejores articulos futbolísticos</h1></header>
+    <nav>
+        <ul>
+            <li><a href="#CR7">Articulo 1: Cristiano Ronaldo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="CR7">
+            <h2>Articulo 1: Doblete de Cristiano Ronaldo en el festival goleador entre el Al Nassr y el Al Ahli</h2>
+            <p><b>Autor:</b>Belen Esteban</p>
+            <p>Un doblete de Cristiano Ronaldo ha dado al Al Nassr su quinta victoria consecutiva.</p>
+            <p>Ronaldo vio puerta pronto. A los cuatro minutos, en una buena jugada, Mané asistió al goleador portugués, que tiró a puerta y superó a Edouard Mendy sumido en una humareda que invadía todo el área y le dificultó la visión.en el 52, Cristiano Ronaldo volvió a marcar. Recibió un balón del brasileño y desde la media luna superó otra vez por raso a Mendy. El trigésimo quinto tanto del portugués en lo que va de 2023 y el noveno en la competición de Arabia Saudí.</p>
+            <p><b>Fecha de publicación:</b>10 de octubre de 2023</p>
+            <button onclick="aumentar()">Aumentar</button>
+            <button onclick="disminuir()">Disminuir</button>
+            <button onclick="normal()">Normal</button>
+        </div>
+    </main>
+    <br>
+    <footer>©2023 Articulos futbolísticos. Todos los derechos reservados</footer>
+    <script>
+        function aumentar() {
+            let boton1 = document.getElementById("CR7");
+            boton1.style.fontSize = "120%";
+        }
+        function disminuir() {
+            let boton2 = document.getElementById("CR7");
+            boton2.style.fontSize = "80%";
+        }
+        function normal() {
+            let boton3 = document.getElementById("CR7");
+            boton3.style.fontSize = "100%";
+        }
+    </script>
+</body>
+</html>
