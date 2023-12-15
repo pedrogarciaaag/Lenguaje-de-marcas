@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 23</title>
+</head>
+<body>
+    <header><h1>Los mejores articulos futbolísticos</h1></header>
+    <nav>
+        <ul>
+            <li><a href="#CR7">Articulo 1: Cristiano Ronaldo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="CR7">
+            <p id="parrafo">Ronaldo vio puerta pronto. A los cuatro minutos, en una buena jugada, Mané asistió al goleador portugués, que tiró a puerta y superó a Edouard Mendy sumido en una humareda que invadía todo el área y le dificultó la visión.en el 52, Cristiano Ronaldo volvió a marcar. Recibió un balón del brasileño y desde la media luna superó otra vez por raso a Mendy. El trigésimo quinto tanto del portugués en lo que va de 2023 y el noveno en la competición de Arabia Saudí.</p>
+        </div>
+    </main>
+    <button id="idioma">Cambiar idioma</button>
+    <button id="color">Cambiar color </button>
+    <script>
+        let idioma = document.getElementById("idioma");
+        let parrafo = document.getElementById("parrafo");
+
+        let textoEspanol = "Ronaldo vio puerta pronto. A los cuatro minutos, en una buena jugada, Mané asistió al goleador portugués, que tiró a puerta y superó a Edouard Mendy sumido en una humareda que invadía todo el área y le dificultó la visión.en el 52, Cristiano Ronaldo volvió a marcar. Recibió un balón del brasileño y desde la media luna superó otra vez por raso a Mendy. El trigésimo quinto tanto del portugués en lo que va de 2023 y el noveno en la competición de Arabia Saudí.";
+        let textoIngles = "Ronaldo found the door early. After four minutes, in a good play, Mané assisted the Portuguese scorer, who shot on goal and beat Edouard Mendy, immersed in a smoke that invaded the entire area and made his vision difficult. In the 52nd minute, Cristiano Ronaldo scored again. He received a ball from the Brazilian and from the half-moon he beat Mendy low again. The Portuguese's thirty-fifth goal so far in 2023 and the ninth in the Saudi Arabian competition.";
+
+        idioma.addEventListener('click', function() {
+            if (parrafo.textContent == textoEspanol) {
+                parrafo.textContent = textoIngles;
+
+            } else {
+                parrafo.textContent = textoEspanol;
+            }
+        });
+
+        let color = document.getElementById("color");
+
+        color.addEventListener("mouseover", function() {
+            parrafo.style.color = "red"; 
+        });
+
+        color.addEventListener("mouseout", function() {
+            parrafo.style.color = ""; 
+        });
+    </script>
+</body>
+</html>
