@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="actividad26.css">
+    <title>Actividad 26</title>
+</head>
+<body>
+    <header><h1>Los mejores articulos futbolísticos</h1></header>
+    <nav>
+        <ul>
+            <li><a href="#Messi">Articulo 2 :Lionel Messi</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="Messi">
+            <h2>Articulo 2: Messi lleva al Inter de Miami a ganar su primer título en una dramática tanda de penaltis</h2>
+            <p><b>Autor:</b>Miguel Jimenez</p>
+            <p>El jugador argentino marcó en la final de la Leagues Cup su décimo gol en siete partidos y se corona máximo goleador y mejor jugador del torneo</p>
+            <p>Con una genialidad tras otra, Lionel Messi completó ayer una marcha triunfal hasta su primer título como jugador del Inter de Miami. El astro argentino, que ha revolucionado el fútbol estadounidense en solo un mes, marcó en la final su décimo gol en siete partidos. El título de la Leagues Cup, un torneo en el que participan los 47 equipos de la estadounidense MLS y la mexicana Liga MX, se resolvió en una dramática tanda de penaltis en la que hicieron falta 11 lanzamientos por equipo.Con la victoria de este sábado, Messi añade una muesca a su revólver y logra su 44º título oficial. Y como tantos otros, este título le pertenece más que a nadie. Camisetas azulgranas, albicelestes y rosas con el número 10 y el nombre de Messi poblaban las gradas. Era el protagonista absoluto desde antes del silbido inicial. En el partido, cuando el balón pasaba por sus pies, un escalofrío recorría el estadio.Messi disparó tres veces a puerta. En la primera marcó un golazo por la escuadra desde fuera del área tras recoger un balón perdido en el borde del área, esquivar a un defensa y colarla entre una maraña de defensas locales. En la segunda volvió a lanzar desde la frontal del área y la estrelló en el poste. Y la tercera fue el penalti que abrió la tanda decisiva. Esperó a que se venciese el portero para marcar con suavidad. Luego esperó nervioso junto a sus compañeros hasta que llegó el título.Messi, que ha jugado más de 40 finales en su carrera, se llevó el trofeo al mejor jugador del torneo y también se coronó máximo goleador. Junto a eso, la copa de campeón, que se encargó de recoger junto al anterior capitán, DeAndre Yedlin, al que el argentino insistió. Mientras, los aficionados coreaban su nombre. No le cabían tantas copas en las manos.</p>
+            <p><b>Fecha de publicación:</b>20 de agosto de 2023</p>
+        </article>
+    </main>
+    <footer>©2023 Articulos futbolísticos. Todos los derechos reservados</footer>
+    <button onclick="boton()">Color parrafo</button>
+    <script>
+        function boton() {
+            let i = 0
+            let parrafos = document.getElementsByTagName("p")
+            while (i < parrafos.length) {
+                if (parrafos[i].textContent.includes("argentino")) {
+                    parrafos[i].classList.add("colorparrafo")
+                }   
+                parrafos[i].addEventListener("click",function(){
+                    alert("¡Alerta! Has cambiado el color del parrafo.")
+                })
+                i++
+            }
+        }
+    </script>
+</body>
+</html>
