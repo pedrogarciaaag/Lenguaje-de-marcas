@@ -1,0 +1,49 @@
+.cabeza{
+    text-align: center;
+    background: linear-gradient(rgb(32, 136, 255), rgb(241, 119, 241));
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    margin-bottom: 20px;
+}
+.tareas{
+    box-shadow: 0px 0px 10px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.nuevatarea{
+    box-shadow: 0px 0px 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+
+.escribirtarea input{
+    height: 30px;
+    width: 80%;
+    float: left;
+    padding: 5px;
+}
+.boton{
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+ul li{
+    list-style: decimal;
+    padding: 10px;
+}
