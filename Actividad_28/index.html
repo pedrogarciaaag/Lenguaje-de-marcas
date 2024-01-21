@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="actividad28.css">
-    <title>Actividad28</title>
+    <title>Actividad 28</title>
 </head>
 <body>
     <header>
@@ -20,10 +20,15 @@
         <h3 class="cien">Nueva Tarea</h3>
         <div class="escribirtarea cien" >
             <input type="text" id="escribir" placeholder="Escriba una nueva tarea ...">
-            <button class="boton" id="boton">Añadir</button>
+            <button class="boton" onclick="añadir()">Añadir</button>
         </div>
-        
     </div>
+    <div class="botones">
+        <button onclick="filtrar('todas')">Mostrar todas</button>
+        <button onclick="filtrar('activas')">Mostrar activas</button>
+        <button onclick="filtrar('completadas')">Mostrar completadas</button>
+    </div>
+
 </body>
 <script src="javascript.js"></script>
 </html>

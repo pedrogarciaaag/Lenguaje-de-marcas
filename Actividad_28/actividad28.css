@@ -37,7 +37,7 @@
     padding: 5px;
 }
 .boton{
-    background-color: black;
+    background-color: rgb(0, 140, 255);
     padding: 10px;
     color: white;
     border: none;
@@ -46,4 +46,23 @@
 ul li{
     list-style: decimal;
     padding: 10px;
+}
+.cerrar{
+    padding: 5px;
+    color: #f44336;
+    float: right;
+    cursor: pointer;
+}
+.botones{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.botones button{
+    background-color: rgb(0, 140, 255);
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 20px;
 }
