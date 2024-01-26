@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="actividad29.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Actividad 29</title>
 </head>
 <body>
     <div class="cuerpo">
@@ -38,7 +38,7 @@
                 <div class="comentarios">
                     <h3 id="Comentarios">Comentarios</h3>
                     <input type="text" placeholder="Escriba un comentario..." id="comentario">
-                    <button id="publicar">Publicar</button>
+                    <button id="publicar" class="publicar">Publicar</button>
                     <div>
                         <ul id="listaComentarios" ></ul>
                     </div>
@@ -50,15 +50,28 @@
         $(document).ready(function(){
             $("#publicar").click(function(){
                 let texto = $("#comentario").val()
-                $("#listaComentarios").append("<li>"+texto+"</li>" )
+                let boton = $("<button/>").text("Eliminar").addClass("eliminar");
+
+                if(texto==""){
+                    alert("No has escrito nada")
+                }else{
+                $("#listaComentarios").append($("<li/>").append(texto, boton));
                 $("#listaComentarios li").addClass("prueba")
+
+                boton.click(function() {
+                    $(this).parent().remove();
+                    alert("Se ha eliminado el comentario correctamente")
+                });
+                
                 alert("Gracias por tu comentario!");
+                $("#comentario").val(''); 
+                }
+
             });
             $("#mostrarComentarios").click(function() {
                 $(".comentarios").toggle();
             })
         });
-
-    </script>
+    </script>    
 </body>
 </html>
