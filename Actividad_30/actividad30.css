@@ -1,0 +1,85 @@
+header{
+    background-color: rgb(0, 110, 255);
+    text-align: center;
+    padding: 10px;
+}
+header h3{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+header p{
+    font-size: 20px;
+}
+body{
+    background-color: rgba(255,255,255,0.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.padre{
+    border-radius: 3px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(255, 166, 0,0.8);
+    display: flex;
+    justify-content: space-between;
+}
+.padre input{
+    padding: 10px;
+    border-radius: 3px;
+    border-style: none;
+}
+.destino{
+    margin: 5px;
+}
+.fecha{
+
+    margin: 5px;
+}
+.precio{
+    margin: 5px;
+    padding: 10px;
+    background-color:rgb(0, 110, 255,0.8) ;
+    border-radius: 3px;
+}
+.precio input{
+    padding: 10px;
+    border-radius: 3px;
+    border-style: none;
+}
+.destinos{
+    text-align: center;
+    font-size: 30px;
+}
+.lugares{
+    background-color: rgb(255, 166, 0,0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lugares div:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
+.lugares img{
+    height: 250px;
+    width: 250px;
+    margin-top: 50px;
+    border-radius: 2px;
+}
+.lugares h3{
+    color: white;
+}
+.lugares div{
+    padding: 10px;
+    border-radius: 3px;
+}
+.objetivo{
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 0px 0px 10px black; 
+    background-color:rgb(0, 110, 255,0.8) ;
+}

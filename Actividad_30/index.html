@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="actividad30.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Actividad 30</title>
+</head>
+<body>
+    <header>
+        <h3>Agencia de viajes CIDE</h3>
+        <p>"Viajes nacionales a un precio ridiculo"</p>
+        <img src="https://image.spreadshirtmedia.net/image-server/v1/designs/151945970,width=178,height=178.png" alt="">
+    </header>
+    <div class="padre">
+        <div class="destino">
+            <label for="origen"><b>Origen: </b></label>
+            <input id="origen">
+            <label for="destino"><b>Destino: </b></label>
+            <input id="destino">
+        </div>
+        <div class="fecha">
+            <label for="from"><b>Ida: </b></label>
+            <input type="text" id="from" name="from">
+            <label for="to"><b>Vuelta: </b></label>
+            <input type="text" id="to" name="to">
+        </div>
+    </div>
+    <div class="precio">
+        <p>
+            <label for="cantidad"><b>Precios: </b></label>
+            <input type="text" id="cantidad" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+        <div id="slider-range"></div>
+    </div>
+    <div class="destinos">
+        <h3>Destinos</h3>
+    </div>
+    <div class="lugares">
+        <div class="objetivo">
+            <img src="https://www.amarehotels.com/wp-content/uploads/2023/04/ibiza-sunset.jpg" alt="">
+            <h3>Ibiza</h3>
+            <p>Ibiza es una de las islas Baleares, un archipiélago de España en el mar Mediterráneo. Es conocida por la animada vida nocturna en la ciudad de Ibiza y San Antonio, donde importantes clubes nocturnos europeos tienen sucursales de verano. </p>
+        </div>
+        <div class="objetivo">
+            <img src="https://bucket-files.city-sightseeing.com/blog/2023/09/palmademallorca-aerialview.jpg" alt="">
+            <h3>Palma de Mallorca</h3>
+            <p>Palma, capital de la isla española de Mallorca, es una ciudad turística situada en el oeste del mar Mediterráneo. La inmensa catedral de Santa María, un monumento gótico que se empezó a construir en el siglo XIII, domina el horizonte de la bahía de Palma. </p>
+        </div>
+        <div class="objetivo">
+            <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/06/que-ver-en-sevilla.jpg" alt="">
+            <h3>Sevilla</h3>
+            <p>Sevilla es un municipio y una ciudad de España, capital de la provincia homónima y de Andalucía.Contaba con 684 164 habitantes en 2023, por lo que es la ciudad más poblada de Andalucía, la cuarta de España según los datos oficiales del INE </p>
+        </div>
+        <div class="objetivo">
+            <img src="https://lh5.googleusercontent.com/p/AF1QipPAz-BiveJjYy5aTTsFF8f_hHVzZ0Bausbsmseh=w540-h312-n-k-no" alt="">
+            <h3>Valencia</h3>
+            <p>Valencia ​es un municipio​ y una ciudad de España, capital de la provincia homónima y de la Comunidad Valenciana.</p>
+        </div>
+    </div>
+</body>
+<script>
+
+    $( function() {
+        var dateFormat = "mm/dd/yy",
+        from = $( "#from" )
+            .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2
+            })
+            .on( "change", function() {
+            to.datepicker( "option", "minDate", getDate( this ) );
+            }),
+        to = $( "#to" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2
+        })
+        .on( "change", function() {
+            from.datepicker( "option", "maxDate", getDate( this ) );
+        });
+    
+        function getDate( element ) {
+        var date;
+        try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+        } catch( error ) {
+            date = null;
+        }
+    
+        return date;
+        }
+
+    } );
+        $( function() {
+        var dateFormat = "mm/dd/yy",
+        from = $( "#from" )
+            .datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2
+            })
+            .on( "change", function() {
+            to.datepicker( "option", "minDate", getDate( this ) );
+            }),
+        to = $( "#to" ).datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 2
+        })
+        .on( "change", function() {
+            from.datepicker( "option", "maxDate", getDate( this ) );
+        });
+    
+        function getDate( element ) {
+        var date;
+        try {
+            date = $.datepicker.parseDate( dateFormat, element.value );
+        } catch( error ) {
+            date = null;
+        }
+    
+        return date;
+        }
+    } );
+
+    $( function() {
+        $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 1500,
+        values: [ 500, 1000 ],
+        slide: function( event, ui ) {
+            $( "#cantidad" ).val( "€" + ui.values[ 0 ] + " - €" + ui.values[ 1 ] );
+        }
+        });
+        $( "#cantidad" ).val( "€" + $( "#slider-range" ).slider( "values", 0 ) +
+        " - €" + $( "#slider-range" ).slider( "values", 1 ) );
+    } );
+
+    $(document).ready(function(){
+        var availableTags = [
+            "Sevilla (SVQ)",
+            "Valencia (VLC)",
+            "Palma de Mallorca (PMI)",
+            "Ibiza (IBZ)",
+        ];
+        $( "#origen, #destino" ).autocomplete({
+            source: availableTags
+        }).change(function() {
+            precioAletorio();
+        });
+    });
+
+    function precioAletorio() {
+        let origen = $( "#origen" ).val();
+        let destino = $( "#destino" ).val();
+
+        if (origen && destino) {
+            var min = 500;
+            var max = 1000;
+            var precio = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            $( "#cantidad" ).val( "€" + precio + " - €" + (precio + 238) );
+            $( "#slider-range" ).slider( "values", [ precio, precio + 238 ] );
+        }
+    }
+
+</script>
+</html>
