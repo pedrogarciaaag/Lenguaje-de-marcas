@@ -1,17 +1,18 @@
 import React, {useState} from "react";
+import { Button } from 'react-bootstrap';
 
-function TodoButton(){
-    const [cont,setCont] = React.useState(0);
-    const [palabra,setPalabra] = React.useState("hola")
+function TodoButton({ addTask }){
+    const [task,setTask] = React.useState("");
 
     function click(){
-        setCont(prevCont => prevCont +1);
+        addTask(task);
+        setTask("")
     }
 
     return(
         <div>
-            <p>{cont}</p>
-            <button onClick={click}>Click</button>
+            <input type="text" value={task} onChange={e => setTask(e.target.value)}></input>
+            <Button onClick={click}>Añadir tarea</Button>
         </div>
     )
 }

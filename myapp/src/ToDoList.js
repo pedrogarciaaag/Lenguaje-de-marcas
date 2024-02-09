@@ -1,12 +1,13 @@
 import React from "react";
+import TodoButton from "./ToDoButton";
 import ToDoItem from "./ToDoItem";
 import { Button } from "react-bootstrap";
 
 function ToDoList(){
     const[tasks,setTasks] = React.useState(["Tasca 1","Tasca 2"]);
 
-    function addTask(){
-        setTasks(currentTasks => [...currentTasks,"Nueva Tarea"])
+    function addTask(task){
+        setTasks(currentTasks => [...currentTasks,task])
     }
 
     function removeTask(taskIndex){
@@ -21,9 +22,7 @@ function ToDoList(){
                     <ToDoItem key={index} content={task} removeTask={() => removeTask(index)} />
                 ))}
             </ul>
-            <Button variant ="succes" onClick={addTask} style={{color: 'white'}}>
-                Añadir tarea
-            </Button>
+            <TodoButton addTask={addTask} />
         </div>
     );
 }
