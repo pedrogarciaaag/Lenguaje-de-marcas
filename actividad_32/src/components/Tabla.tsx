@@ -5,16 +5,16 @@ import Fila from "./Fila";
 
 function Table(){
     return <>
-       <table className="table table-striped table-dark text-center">
+       <table className="table table-bordered table-dark text-center">
             <thead className="thead-light">
                 <tr>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Precio</th>
-                    <th scope="col">Tienda</th>
-                    <th scope="col">Notas</th>
-                    <th scope="col">Comprado</th>
-                    <th scope="col">Imagen</th>
+                <th className="col-md-1">Producto</th>
+                    <th className="col-md-1">Cantidad</th>
+                    <th className="col-md-1">Precio</th>
+                    <th className="col-md-1">Tienda</th>
+                    <th className="col-md-1">Notas</th>
+                    <th className="col-md-1 ">Comprado</th>
+                    <th className="col-md-1">Imagen</th>
                 </tr>
             </thead>
             <tbody>

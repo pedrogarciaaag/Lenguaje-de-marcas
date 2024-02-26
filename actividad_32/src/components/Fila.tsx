@@ -18,7 +18,7 @@ const Fila : React.FC<{fila: FilaProps}> = ({fila}) => (
         <td>{fila.tienda}</td>
         <td>{fila.notas}</td>
         <td>{fila.comprado ? 'Sí' : 'No'}</td>
-        <td><img src={fila.imagen} alt={fila.producto} style={{width: "100px", height: "100px"}} /></td>
+        <td><img src={fila.imagen} alt={fila.producto} style={{width: "200px", height: "150px"}} /></td>
     </tr>
 )
 
