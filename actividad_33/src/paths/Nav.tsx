@@ -6,17 +6,20 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar bg="light" data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">Cide</Navbar.Brand>
+        <Navbar.Brand>
+          <img src="https://www.cide.es/storage/2023/12/nova-web-logo-CIDE.png" alt="" />
+          CideTravel
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href = "/">Inici</Nav.Link>
-            <Nav.Link href = "/intereses">Interesos</Nav.Link>
-            <Nav.Link href = "/restaurants">Restaurants</Nav.Link>
-            <Nav.Link href = "/hotels">Hotels</Nav.Link>
-            <Nav.Link href = "/activitats">Activitats</Nav.Link>
+            <Nav.Link href = "/">Inicio</Nav.Link>
+            <Nav.Link href = "/intereses">Puntos de interes</Nav.Link>
+            <Nav.Link href = "/restaurants">Restaurantes</Nav.Link>
+            <Nav.Link href = "/hotels">Hoteles</Nav.Link>
+            <Nav.Link href = "/activitats">Activitades</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
