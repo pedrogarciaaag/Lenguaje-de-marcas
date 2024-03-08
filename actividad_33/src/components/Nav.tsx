@@ -2,13 +2,13 @@ import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 function NavBar() {
   return (
-    <Navbar bg="light" data-bs-theme="light">
+    <Navbar bg="light" data-bs-theme="light" expand="lg" >
       <Container>
-        <Navbar.Brand>
+        <Navbar.Brand className='mb-0 h1'>
           <img src="https://www.cide.es/storage/2023/12/nova-web-logo-CIDE.png" alt="" />
           CideTravel
         </Navbar.Brand>

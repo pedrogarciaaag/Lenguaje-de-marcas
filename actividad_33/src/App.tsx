@@ -8,7 +8,7 @@ import Intereses from './paths/Interes';
 import Restaurants from './paths/Restuarants';
 import Hotels from './paths/Hotels';
 import Activitats from './paths/Activitats';
-import NavBar from './paths/Nav';
+import NavBar from './components/Nav';
 
 
 
