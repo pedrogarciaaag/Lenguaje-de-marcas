@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/css/main.cbc512fe.css",
+    "main.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.0f45c49b.js",
+    "static/js/453.3b5b67fb.chunk.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/453.3b5b67fb.chunk.js",
+    "static/media/mercado.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/mercado.214b45a0967e183e90dd.jpg",
+    "static/media/pizza.jpeg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/pizza.ed0b20da2535d9bf9c8a.jpeg",
+    "static/media/catedral.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/catedral.379ff714ac2dc1ed8724.jpg",
+    "static/media/almudaina.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/almudaina.f62eae5750a1beb6b0e0.jpg",
+    "static/media/seu.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/seu.74d4ed9683eadcd49412.jpg",
+    "static/media/hotelpamplona.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/hotelpamplona.7e824d6a41f197e23e87.jpg",
+    "static/media/bicicleta.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/bicicleta.d14522674db19159f1eb.jpg",
+    "static/media/rodeo.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/rodeo.6038ed8bfb3687970fe2.jpg",
+    "static/media/palma3.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/palma3.f8c988a2c6b7622e87e4.jpg",
+    "static/media/playa.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/playa.05e974e6610fcf33a817.jpg",
+    "static/media/UrPalacioAvenida.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/UrPalacioAvenida.6a2aaa7f9b6b9e4e1933.jpg",
+    "index.html": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/index.html",
+    "main.cbc512fe.css.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/css/main.cbc512fe.css.map",
+    "main.0f45c49b.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.0f45c49b.js.map",
+    "453.3b5b67fb.chunk.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/453.3b5b67fb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbc512fe.css",
+    "static/js/main.0f45c49b.js"
+  ]
+}
