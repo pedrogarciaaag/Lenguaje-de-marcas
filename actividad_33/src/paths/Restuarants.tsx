@@ -4,7 +4,7 @@ import Cards from '../components/Cards'
 function Restaurants() {
     return (
         <div>
-            <h2>Restaurantes y Gastronomía</h2>
+            <h2 style={{ color: 'green' }}>Restaurantes y Gastronomía</h2>
             <ul>
                 <Cards/>
             </ul>

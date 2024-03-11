@@ -5,7 +5,7 @@ function Intereses() {
     return(
         
         <div>
-            <h2 className='center'>Puntos de intereses en Palma</h2>
+            <h2 style={{ color: 'green' }}>Puntos de intereses en Palma</h2>
             <div>
                 <Slider/>
             </div>

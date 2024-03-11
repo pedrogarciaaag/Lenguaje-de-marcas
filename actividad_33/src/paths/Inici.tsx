@@ -4,7 +4,7 @@ import Image from 'react-bootstrap/Image';
 function Inici() {
     return(
         <div>
-            <h2>Palma de Mallorca</h2>
+            <h2 style={{ color: 'green' }}>Palma de Mallorca</h2>
             <p>Palma de Mallorca, la capital de la isla de Mallorca en las Islas Baleares, tiene una rica historia que se remonta a la época romana. Aquí algunos puntos destacados:</p>
             <ul>
                 <li>Fundación: Palma fue fundada por los romanos en el año 123 a.C. con el nombre de “Palmaria Palmensis”.</li>
