@@ -7,7 +7,7 @@ import Melia from '../images/melia.jpg'
 
 function Hotels() {
     return (
-        <div >
+        <div>
             <h2 style={{ color: 'green' }} >Hoteles Recomendados</h2>
             <ListGroup style={{ width: '600px' }}>
                 <ListGroup.Item >

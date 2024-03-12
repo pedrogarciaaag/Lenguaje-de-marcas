@@ -14,14 +14,14 @@ function UncontrolledExample() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={CascoAntiguo} style={{width: "100%", height: "auto"}} className="d-block mx-auto"/>
+        <img src={CascoAntiguo} style={{width: "80%", height: "auto"}} className="d-block mx-auto"/>
         <Carousel.Caption>
           <h3>Casco antiguo</h3>
           <p>Pasea por las estrechas calles empedradas del casco antiguo, donde encontrarás tiendas encantadoras, cafeterías y edificios históricos.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={Seu} style={{width: "100%", height: "auto"}} className="d-block mx-auto"/>
+        <img src={Seu} style={{width: "80%", height: "auto"}} className="d-block mx-auto"/>
         <Carousel.Caption>
           <h3>La Seu</h3>
           <p>La majestuosa catedral gótica de La Seu es un ícono de la ciudad y un testimonio de su pasado histórico.</p>
