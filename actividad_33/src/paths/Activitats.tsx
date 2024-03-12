@@ -1,19 +1,20 @@
 import Accordion from 'react-bootstrap/Accordion';
 import Image from 'react-bootstrap/Image'
+
 import Card from 'react-bootstrap/Card'
 import Playa from '../images/playa.jpg';
 import Catedral from '../images/catedral.jpg';
 import Bicicleta from '../images/bicicleta.jpg';
 
-function BasicExample() {
+function Activitats() {
   return (
     <div className="p-3">
-      <h2 className="text-success text-center">Actividades</h2>
+      <h2 className="text-success">Actividades</h2>
       <Accordion defaultActiveKey="0">
         <Card>
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-              <Card.Header className="text-white bg-primary text-center">Playas</Card.Header>
+              <Card.Header className="text-white bg-success">Playas</Card.Header>
             </Accordion.Header>
             <Accordion.Body>
               <Card.Body>
@@ -28,7 +29,7 @@ function BasicExample() {
         <Card>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-              <Card.Header className="text-white bg-primary text-center">Visita a la Catedral</Card.Header>
+              <Card.Header className="text-white bg-success">Visita a la Catedral</Card.Header>
             </Accordion.Header>
             <Accordion.Body>
               <Card.Body>
@@ -43,7 +44,7 @@ function BasicExample() {
         <Card>
           <Accordion.Item eventKey="2">
             <Accordion.Header>
-              <Card.Header className="text-white bg-primary text-center">Paseo en bicicleta</Card.Header>
+              <Card.Header className="text-white bg-success">Paseo en bicicleta</Card.Header>
             </Accordion.Header>
             <Accordion.Body>
               <Card.Body>
@@ -60,4 +61,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Activitats;

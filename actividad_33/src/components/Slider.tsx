@@ -1,9 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
+
 import Almudaina from '../images/almudaina.jpg';
 import CascoAntiguo from '../images/palma3.jpg';
 import Seu from '../images/seu.jpg';
 
-function UncontrolledExample() {
+function Sliders() {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
@@ -31,4 +32,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default Sliders;

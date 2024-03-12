@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/css/main.cbc512fe.css",
-    "main.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.33277973.js",
+    "main.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.512f86bd.js",
     "static/js/453.3b5b67fb.chunk.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/453.3b5b67fb.chunk.js",
     "static/media/marchica.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/marchica.aafcd980b7b071a9a366.jpg",
     "static/media/mercado.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/mercado.214b45a0967e183e90dd.jpg",
@@ -20,11 +20,11 @@
     "static/media/UrPalacioAvenida.jpg": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/media/UrPalacioAvenida.6a2aaa7f9b6b9e4e1933.jpg",
     "index.html": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/index.html",
     "main.cbc512fe.css.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/css/main.cbc512fe.css.map",
-    "main.33277973.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.33277973.js.map",
+    "main.512f86bd.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/main.512f86bd.js.map",
     "453.3b5b67fb.chunk.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_33/build/static/js/453.3b5b67fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbc512fe.css",
-    "static/js/main.33277973.js"
+    "static/js/main.512f86bd.js"
   ]
 }

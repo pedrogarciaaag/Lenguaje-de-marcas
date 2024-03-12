@@ -3,7 +3,6 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
 import Pizza from '../images/pizza.jpeg'
 import Rodeo from '../images/rodeo.jpg'
 import Mercado from '../images/mercado.jpg'
@@ -11,7 +10,7 @@ import TresMares from '../images/tresmares.jpg'
 import Grill from '../images/grill.jpg'
 import MarChica from '../images/marchica.jpg'
 
-function BasicExample() {
+function Cards() {
   return (
     <Row xs={1} md={3} className="g-4">
         <Col>
@@ -87,4 +86,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Cards;
