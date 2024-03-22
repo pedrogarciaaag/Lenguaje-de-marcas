@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/css/main.cbc512fe.css",
+    "main.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/js/main.f93ebd5e.js",
+    "static/js/453.97c11e33.chunk.js": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/js/453.97c11e33.chunk.js",
+    "index.html": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/index.html",
+    "main.cbc512fe.css.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/css/main.cbc512fe.css.map",
+    "main.f93ebd5e.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/js/main.f93ebd5e.js.map",
+    "453.97c11e33.chunk.js.map": "https://pedrogarciaaag.github.io/Lenguaje-de-marcas/actividad_34/build/static/js/453.97c11e33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbc512fe.css",
+    "static/js/main.f93ebd5e.js"
+  ]
+}
