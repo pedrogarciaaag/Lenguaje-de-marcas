@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export type Razas = Root2[]
+export type Razas = Raza[]
 
-export interface Root2 {
+export interface Raza {
   weight: Weight
   id: string
   name: string
