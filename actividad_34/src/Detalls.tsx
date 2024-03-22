@@ -37,7 +37,9 @@ function Detalls() {
     })
       .then((response) => response.json())
       .then((data: Buscador[]) => {
-        setBuscadorImg(data[0])
+        if (data.length > 0) {
+          setBuscadorImg(data[0])
+        }
       });
   }, [searchParams])
 
