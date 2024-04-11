@@ -26,28 +26,28 @@ function InfoBrawlers (){
     
     return(
         <div>
-            {brawlers.map(brawlers=>(
-                <Row xs={1} md={3} className="g-4">
-                <Col>
-                    <Card>
-                    <Card.Img variant="top" src={brawlers.Imagen} style={{ height: '200px', objectFit: 'cover' }} />
-                    <Card.Body>
-                        <Card.Title>{brawlers.Nombre}</Card.Title>
-                        <Card.Text>
-                            <ul>
-                                <li>Nivel: {brawlers.Nivel}</li>
-                                <li>Disponible: {brawlers.Disponible ? 'Sí' : 'No'}</li>
-                            </ul>
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                </Col>
-                
+            <Row xs={1} md={3} className="g-4">
+                {brawlers.map(brawlers=>(
+                    <Col>
+                        <Card>
+                        <Card.Img variant="top" src={brawlers.Imagen} style={{ height: '350px', objectFit: 'cover' }} />
+                        <Card.Body>
+                            <Card.Title>{brawlers.Nombre}</Card.Title>
+                            <Card.Text className="text-background" >
+                                <ul>
+                                    <li>Nivel: {brawlers.Nivel}</li>
+                                    <li>Disponible: {brawlers.Disponible ? 'Sí' : 'No'}</li>
+                                </ul>
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </Col>
+                ))}
             </Row>
-            ))}
         </div>
     )
 
 }
 
 export default InfoBrawlers
+
