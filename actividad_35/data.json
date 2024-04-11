@@ -1,0 +1,35 @@
+[
+    {
+    "Nombre": "Brook", 
+    "Nivel": 11 ,
+    "Disponible": true,
+    "Imagen": "https://static.wikia.nocookie.net/brawlstars/images/f/f9/Brock_Portrait.png/revision/latest?cb=20210111144913&path-prefix=es"
+    },
+
+    {
+        "Nombre": "El Primo", 
+        "Nivel": 10 ,
+        "Disponible": true,
+        "Imagen": "https://static.wikia.nocookie.net/brawlstars/images/2/23/El_Primo1-pfp.png/revision/latest?cb=20220429011308"
+    },
+
+    {
+        "Nombre": "Nita", 
+        "Nivel": 8 ,
+        "Disponible": false,
+        "Imagen": "https://static.wikia.nocookie.net/brawlstars/images/0/01/Nita1-pfp.webp/revision/latest?cb=20231215160623&path-prefix=es"
+    },
+
+    {
+        "Nombre": "Leon", 
+        "Nivel": 6 ,
+        "Disponible": false,
+        "Imagen": "https://static.wikia.nocookie.net/brawlstars/images/8/8b/Leon1-pfp.png/revision/latest?cb=20220429014812"
+        },
+    {
+        "Nombre": "Frank", 
+        "Nivel": 9 ,
+        "Disponible": true,
+        "Imagen": "https://static.wikia.nocookie.net/brawlstars/images/8/86/Frank1-pfp.png/revision/latest?cb=20220429013846"
+        }
+]
