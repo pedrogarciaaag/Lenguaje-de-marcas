@@ -36,7 +36,7 @@ function InfoBrawlers (){
                         <Card.Text>
                             <ul>
                                 <li>Nivel: {brawlers.Nivel}</li>
-                                <li>Disponible: {brawlers.Disponible}</li>
+                                <li>Disponible: {brawlers.Disponible ? 'Sí' : 'No'}</li>
                             </ul>
                         </Card.Text>
                     </Card.Body>
