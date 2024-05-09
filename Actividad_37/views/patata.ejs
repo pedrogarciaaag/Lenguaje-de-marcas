@@ -1,0 +1,33 @@
+<%- include("header") %>
+
+<style>
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<div class="card" style="width: 18rem;">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <h2>Productes</h2>
+            <% productes.forEach((producte,index)=>{ %>
+            <div class="info">
+                <p><%= producte.nom %></p>
+                <p><%= producte.preu %></p>
+            </div><% }) %>
+            <button onclick="location.href='/producte'" class="btn btn-primary">Crear producte</button>
+        </li>
+        <li class="list-group-item">
+            <h2>Empreses</h2>
+            <% empreses.forEach((empresa,index)=>{ %>
+            <div class="info">
+                <p><%= empresa.nom %></p> 
+                <p><%= empresa.email %></p>
+            </div><% }) %> 
+            <button onclick="location.href='/empresa'" class="btn btn-primary">Crear empresa</button>
+        </li>
+    </ul>
+</div>
+
+<%- include("footer") %>

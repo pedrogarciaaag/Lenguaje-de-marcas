@@ -4,46 +4,53 @@ const db = require('better-sqlite3')('act37.sqlite')
 const app = express()
 const port = 3000
 
-app.set("view engine","ejs");
+app.set("view engine", "ejs");
 
 app.use(express.json())
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }))
 
-app.get("/",(req,res) =>{
-    const rows = db.prepare("SELECT * FROM empreses").all();
-    res.render("index", msgs={msgs : rows})
+//INDEX
+app.get("/", (req, res) => {
+  const productes = db.prepare("SELECT * FROM productes").all();
+  const empreses = db.prepare("SELECT * FROM empreses").all();
+  res.render("patata", { productes: productes, empreses: empreses });
+  res.render("patata")
 })
 
-
+//EMPRESES
 app.get('/empreses', (req, res) => {
-    const row = db.prepare("SELECT * FROM empreses").all();
-    res.send(row)
-  })
+  const empreses = db.prepare("SELECT * FROM empreses").all();
+  res.render("empreses", msgs = { msgs: empreses })
+})
 
 app.get('/empresa', (req, res) => {
-    empresaID = req.query.id
-    const row = db.prepare("SELECT * FROM empreses WHERE id = ?").get(empresaID);
-    res.send(row)
-  })
+  res.render("empresa")
+})
 
+app.post('/empresa', (req, res) => {
+  if (req.body.nom && req.body.email) {
+    const statement = db.prepare("INSERT INTO empreses (nom,email) VALUES (?,?)")
+    const info = statement.run(req.body.nom, req.body.email)
+  }
+  res.redirect("empresa")
+})
 
+//PRODUCTES
 app.get('/productes', (req, res) => {
-    const rows = db.prepare("SELECT * FROM productes").all();
-    res.render("productes", msgs={msgs : rows})
+  const productes = db.prepare("SELECT * FROM productes").all();
+  res.render("productes", msgs = { msgs: productes })
 })
 
 //
 app.get('/producte', (req, res) => {
-    //producteID = req.query.id
-    //const row = db.prepare("SELECT * FROM productes WHERE id = ?").get(producteID);
-    res.render("producte")
-  })
+  res.render("producte")
+})
+
 //
 app.post('/producte', (req, res) => {
-  console.log(req.body)
-  if(req.body.nom && req.body.preu){
+  if (req.body.nom && req.body.preu) {
     const statement = db.prepare("INSERT INTO productes (nom,preu) VALUES (?,?)")
-    const info = statement.run(req.body.nom,req.body.preu)
+    const info = statement.run(req.body.nom, req.body.preu)
   }
   res.redirect("producte")
 })
