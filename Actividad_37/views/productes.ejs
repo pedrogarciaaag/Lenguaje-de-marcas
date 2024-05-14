@@ -1,5 +1,16 @@
 <%- include("header") %>
+    <h2>Productes</h2>
     <% msgs.forEach((msg,producte)=>{ %>
-        <p><%= msg.nom %></p>
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="info">
+                        <p><b><%= msg.nom %></b></p>
+                        <p><%= msg.preu %></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     <% }) %>
+    <button onclick="location.href='/producte'" class="btn btn-primary">Crear producte</button>
 <%- include("footer") %>
