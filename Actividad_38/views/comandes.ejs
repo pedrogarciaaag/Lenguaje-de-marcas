@@ -1,0 +1,21 @@
+<%- include("header") %>
+    <h2>Comandes</h2>
+    <div class="accordion" >
+        <% comandes.forEach((comanda,posicion)=>{ %>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= comanda.id %>" aria-expanded="false" >
+                        Comanda ID: <%= comanda.id %>
+                    </button>
+                </h2>
+                <div id="collapse<%= comanda.id %>" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Empresa:</strong> <%= comanda.nombre_empresa %><br>
+                        <strong>Producto:</strong> <%= comanda.nombre_producto %>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+<%- include("footer") %>
+
