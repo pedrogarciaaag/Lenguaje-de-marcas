@@ -1,0 +1,24 @@
+<%- include("header") %>
+    <h2>Creació d'una comanda</h2>
+    <form action="comanda" method="post">
+        <div>
+            <h4>Producte</h4>
+            <select name="producte_id" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                <option value=""><i>Seleccione un producto</i></option>
+                <% productes.forEach((producte,posicion)=>{ %>
+                    <option value="<%= producte.id %>"><%= producte.nombre_producto %></option>
+                <% }) %>
+            </select>
+        </div>
+        <div>
+            <h4>Empreses</h4>
+            <select name="empresa_id" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" required>
+                <option value=""><i>Seleccione una empresa</i></option>
+                <% empreses.forEach((empresa,posicion)=>{ %>
+                    <option value="<%= empresa.id %>"><%= empresa.nombre_empresa %></option>
+                <% }) %>
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+<%- include("footer") %>
